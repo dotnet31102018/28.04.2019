@@ -16,7 +16,8 @@ namespace My1EF
                                 select c).ToList();
                 List<Country> countriesMS = globeEntiites.Countries.ToList();
 
-                globeEntiites.Countries.Add()
+                globeEntiites.Countries.Add(new Country() { NAME = "Ireland", POPULTAION = 570000 });
+                globeEntiites.SaveChanges();
                     
                 Console.WriteLine();
             }
